@@ -1,8 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgb(209, 203, 203);
   color: #272626;
   margin: 0;
   /* font-family: sans-serif; */
+  /* font-family: "Roboto", sans-serif; */
 }
 
 p {
@@ -34,6 +43,12 @@ i {
   margin-top: 20px;
 }
 
+#sub_heading {
+  font-size: 30px;
+  text-align: center;
+  margin: 20px auto;
+}
+
 .inline {
   margin: auto 13px auto 0;
   margin-right: 13px;
@@ -50,8 +65,9 @@ i {
 }
 
 #logo_img {
+  margin-left: 25px;
   max-width: 100%;
-  max-height: 50px;
+  max-height: 70px;
 }
 
 .search_bar {
@@ -65,4 +81,337 @@ i {
   padding-right: 30px;
   border: 1px solid #dfe1e5;
   border-radius: 24px;
+}
+
+/* content */
+
+.head {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding: 44px;
+  margin-top: 11px;
+}
+.head span {
+  color: rgb(160, 140, 140);
+}
+.card {
+  display: flex;
+  justify-content: center;
+  padding: 22px;
+}
+.card .crd {
+  width: 300px;
+  height: 400px;
+  background-color: #807e7e;
+  margin-inline: 22px;
+}
+.card .crd:hover {
+  width: 320px;
+  height: 420px;
+  transition: 0.6s ease;
+}
+.crd .txt {
+  margin-left: 28px;
+}
+.txt i {
+  color: rgb(255, 196, 0);
+  margin-top: 4px;
+  font-size: 19px;
+}
+.txt button {
+  width: 110px;
+  height: 33px;
+  border: none;
+  background-color: rgb(1, 148, 148);
+  color: white;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.crd img {
+  width: 100%;
+  /* margin: auto; */
+  padding: 22px;
+  border-radius: 30px;
+  max-height: 300px;
+}
+
+/* blogs */
+
+.trd {
+  display: flex;
+  justify-content: center;
+}
+.trending {
+  display: flex;
+  width: 500px;
+  height: 300px;
+  background-color: #807e7e;
+  margin-inline: 22px;
+  border-radius: 22px;
+}
+.trending .txt {
+  padding: 22px;
+  margin-top: 13%;
+}
+.txt a {
+  width: 140px;
+  height: 36px;
+  background-color: rgb(3, 94, 94);
+  color: white;
+  font-size: 18px;
+  border: none;
+  padding: 7px;
+}
+.txt a:hover {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  border: 2px solid rgb(69, 32, 129);
+  color: rgb(49, 49, 49);
+  cursor: pointer;
+  transition: 0.9 ease;
+}
+.trending img {
+  width: 55%;
+  border-radius: 22px;
+  padding: 12px;
+}
+.trending:hover {
+  width: 530px;
+  height: 330px;
+  transition: 0.7s ease;
+  cursor: pointer;
+}
+
+/* review */
+
+.revi_head {
+  text-align: center;
+  /* margin-top: 93px; */
+  padding: 92px;
+}
+.revi_head span {
+  color: rgb(3, 165, 165);
+}
+.read {
+  display: flex;
+  justify-content: center;
+}
+.readBlog {
+  width: 300px;
+  height: 360px;
+  background-color: #807e7e;
+  text-align: center;
+  margin-inline: 22px;
+}
+.readBlog img {
+  width: 100%;
+  border-radius: 50%;
+  padding: 22px;
+}
+.readBlog p {
+  padding: 19px;
+}
+.readBlog i {
+  color: orangered;
+  font-size: 22px;
+}
+
+/* product page */
+
+.fullPage {
+  display: flex;
+  justify-content: center;
+  display: none;
+  margin-top: 22px;
+  font-family: "Roboto", sans-serif;
+}
+.fullPage .cartText {
+  padding: 22px;
+  margin-top: 33px;
+}
+.cartText p {
+  margin-top: 11px;
+}
+.cartText .btn button {
+  width: 140px;
+  height: 40px;
+  background: rgb(247, 133, 2);
+  color: white;
+  border: none;
+  font-size: 22px;
+  margin-top: 22px;
+}
+.btn button:hover {
+  background-color: rgb(253, 173, 25);
+  cursor: pointer;
+}
+.cartText h2 {
+  margin-top: 11px;
+}
+.relode {
+  background-color: rgb(3, 75, 75);
+  color: white;
+  width: 140px;
+  height: 34px;
+  border: none;
+  font-size: 22px;
+  margin-top: 22px;
+}
+.relode:hover {
+  background-color: rgb(4, 141, 141);
+  cursor: pointer;
+}
+
+/* news letter */
+
+.letter {
+  background-color: rgba(11, 6, 37, 0.993);
+  padding: 44px;
+  margin-top: 63px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.letter .inp input {
+  width: 270px;
+  height: 40px;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+}
+.inp {
+  display: flex;
+}
+.inp button {
+  width: 130px;
+  height: 40px;
+  border: none;
+  background-color: rgb(3, 134, 134);
+  font-size: 18px;
+  color: white;
+}
+
+/* contact */
+
+.contactUs {
+  text-align: center;
+  border: 3px solid rgb(0, 105, 105);
+  width: 600px;
+  padding: 33px;
+  margin: 20px auto;
+}
+.contactUs input {
+  width: 400px;
+  height: 25px;
+  outline: none;
+  padding: 15px;
+  margin-top: 22px;
+  border: 2px solid rgb(3, 109, 109);
+  font-size: 18px;
+}
+.contactUs button {
+  margin-top: 22px;
+  width: 120px;
+  height: 38px;
+  background-color: rgb(3, 134, 134);
+  color: white;
+  font-size: 22px;
+  border: none;
+  outline: none;
+}
+.contactUs button:hover {
+  border: 2px solid rgb(3, 161, 161);
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+}
+
+/* footer */
+
+.container {
+  max-width: 1170px;
+  margin: -40px auto;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.footer_ul {
+  list-style: none;
+}
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+.footer-col {
+  width: 30%;
+  padding: 0 15px;
+}
+.footer-col .footer_tital {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col .footer_tital::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col .footer_ul .footer_list_item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col .footer_list_item .sol_link {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col .footer_ul .footer_list_item .sol_link:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links .sol_link {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 10px 10px 10px 0px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links .sol_link:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
 }
