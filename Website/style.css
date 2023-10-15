@@ -78,7 +78,7 @@ i {
 }
 .main img {
   width: 350px;
-  margin-top: -165px;
+  margin-top: -155px;
   /* margin-right: -100px; */
 }
 .mainText {
@@ -107,6 +107,13 @@ button:hover {
   background-color: transparent;
   color: black;
   cursor: pointer;
+}
+@media (max-width: 350px) {
+  .main img {
+    max-width: 100%;
+    margin-top: -165px;
+    /* margin-right: -100px; */
+  }
 }
 
 /* content */
@@ -175,7 +182,8 @@ button:hover {
   border-radius: 5px;
 }
 .trends .pdu_slider_img {
-  max-width: 33%;
+  max-width: 30%;
+  max-height: 75%;
   border-radius: 5px;
   margin-inline: 23px;
 }
@@ -208,6 +216,27 @@ button:hover {
   background-color: rgb(3, 134, 134);
   font-size: 18px;
   color: white;
+}
+@media (max-width: 767px) {
+  .letter {
+    display: block;
+  }
+  .inp {
+    display: flex;
+    width: 80%;
+  }
+  .letter .inp input {
+    width: 80%;
+  }
+}
+@media (max-width: 492px) {
+  .inp {
+    display: block;
+    width: 80%;
+  }
+  .letter .inp input {
+    width: 80%;
+  }
 }
 
 /* footer */
@@ -289,10 +318,6 @@ button:hover {
 /* size arj */
 
 @media screen and (max-width: 950px) {
-  .main {
-    display: block;
-    text-align: center;
-  }
   .trending {
     width: 90%;
     margin: auto;
@@ -321,5 +346,18 @@ button:hover {
 @media (max-width: 574px) {
   .footer-col {
     width: 100%;
+  }
+  .main {
+    display: block;
+    text-align: center;
+  }
+  .mainText {
+    font-family: "Roboto", sans-serif;
+    /* margin-top: 180px; */
+    margin-left: 0px;
+  }
+  .mainText p {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

@@ -264,7 +264,6 @@ i {
 }
 
 /* news letter */
-
 .letter {
   background-color: rgba(11, 6, 37, 0.993);
   padding: 44px;
@@ -293,6 +292,19 @@ i {
   color: white;
 }
 
+@media (max-width: 767px) {
+  .letter {
+    display: block;
+  }
+  .inp {
+    display: flex;
+  }
+}
+@media (max-width: 492px) {
+  .inp {
+    display: block;
+  }
+}
 /* contact */
 
 .contactUs {
