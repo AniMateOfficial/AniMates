@@ -1,4 +1,3 @@
-8#AniMates
 this is the full website repository.
 it includes html, css, JavaScript and other sub flies.
 Currently the v0.5 is available.
